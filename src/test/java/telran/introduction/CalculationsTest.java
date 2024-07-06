@@ -29,4 +29,9 @@ public class CalculationsTest {
     void sumOfDigitsTest() {
         assertEquals(10, sumOfDigits(1234));
     }
+
+    @Test 
+    void maxDigitTest() {
+        assertEquals(8, maxDigit(1234653248));
+    }
 }

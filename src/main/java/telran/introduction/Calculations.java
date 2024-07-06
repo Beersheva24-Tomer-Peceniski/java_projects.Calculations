@@ -34,8 +34,16 @@ public class Calculations {
     }
 
     public static int maxDigit(int number) {
-        //TODO 
-        return -1;
+        String text = Integer.toString(number);
+        int max = 0;
+        for (int i = 0; i < text.length(); i++) {
+            char textChar = text.charAt(i);
+            int digit = Character.getNumericValue(textChar);
+            if (digit > max) {
+                max = digit;
+            }
+        }
+        return max;
     }
 
     public static boolean isDividedOn(int number, int divider) {
