@@ -17,7 +17,7 @@ public class CalculationsTest {
 
     @Test
     void divideTest() {
-        assertEquals(10, divide(20,2));
+        assertEquals(0, divide(20,0));
     }
 
     @Test 

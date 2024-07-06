@@ -12,9 +12,15 @@ public class Calculations {
         return result;
     }
 
-    public static int divide(int op1, int op2) {
-        int result = op1 / op2;
-        return result;
+    public static int divide(int number, int divider) {
+        if (divider == 0) {
+            System.out.println("Error: Division by zero is not allowed.");
+            return 0;
+        }
+        else {
+            int result = number / divider;
+            return result;
+        }
     }
 
     public static int substract(int op1, int op2) {
