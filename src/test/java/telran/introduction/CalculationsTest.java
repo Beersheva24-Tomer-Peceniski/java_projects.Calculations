@@ -13,6 +13,7 @@ public class CalculationsTest {
     @Test
     void multiplyTest() {
         assertEquals(16, multiply(2, 8));
+        assertEquals(18, multiply(2, 9));
     }
 
     @Test
