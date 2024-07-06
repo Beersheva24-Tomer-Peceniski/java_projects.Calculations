@@ -47,7 +47,10 @@ public class Calculations {
     }
 
     public static boolean isDividedOn(int number, int divider) {
-        //TODO
-        return false;
+        boolean result = true; 
+        if (number % divider != 0) {
+            result = false;
+        }
+        return result;
     }
 }

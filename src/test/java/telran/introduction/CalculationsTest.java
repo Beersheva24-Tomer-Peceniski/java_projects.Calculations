@@ -34,4 +34,9 @@ public class CalculationsTest {
     void maxDigitTest() {
         assertEquals(8, maxDigit(1234653248));
     }
+
+    @Test
+    void isDividedOnTest() { 
+        assertEquals(false, isDividedOn(13,3));
+    }
 }
