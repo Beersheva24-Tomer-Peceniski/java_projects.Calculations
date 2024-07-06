@@ -23,8 +23,14 @@ public class Calculations {
     }
 
     public static int sumOfDigits(int number) {
-        //TODO
-        return -1;
+        String text = Integer.toString(number);
+        int sum = 0;
+        for (int i = 0; i < text.length(); i++) {
+            char textChar = text.charAt(i);
+            int digit = Character.getNumericValue(textChar);
+            sum += digit;            
+        }
+        return sum;
     }
 
     public static int maxDigit(int number) {

@@ -24,4 +24,9 @@ public class CalculationsTest {
     void substractTest() {
         assertEquals(18, substract(28,10));
     }
+
+    @Test
+    void sumOfDigitsTest() {
+        assertEquals(10, sumOfDigits(1234));
+    }
 }
